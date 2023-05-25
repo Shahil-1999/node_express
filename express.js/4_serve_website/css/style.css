@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image:linear-gradient(to top right, rgb(0, 0, 33), rgb(12, 12, 105));
+    background-repeat: no-repeat;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to top left, rgb(0, 0, 33), rgb(12, 12, 105));
+    height: 4.3rem;
+}
+.left_nav{
+    color: white;
+    animation-name: left_nav;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+
+@keyframes left_nav {
+    from{
+        transform: rotate(5deg);
+    }
+    to{
+        transform: rotate(-5deg);
+    }
+    
+}
+
+.right_nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+.right_nav ul li{
+    list-style: none;
+    padding: 0 1.5rem;
+}
+.right_nav ul{
+    display: flex;
+    
+}
+.btn button{
+    width: 86px;
+    height: 29px;
+    background: rgb(227, 85, 85);
+    border: none;
+    border-radius: 20px;
+    color: white;
+}
+
+.first{
+    width: 80vw;
+    height: 80vh;
+    margin: auto;
+    display: flex;
+}
+.first_left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    color: white;
+    height: inherit;
+}
+.first_container{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.first_left_content{
+    padding: 1.3rem 0;
+}
+.first_left_content button{
+    width: 11rem;
+    height: 1.6rem;
+    background-color: rgb(227, 85, 85);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    margin: 0 11px;
+
+}
+#sec_btn{
+    background-color: rgb(97, 93, 93);
+}
+.first_left_content p{
+    font-size: 2.2rem;
+}
+.first_left_content p span{
+    color: rgb(227, 85, 85);
+}
+.first_right{
+    display: grid;
+    place-items: center;
+    width: 50%;
+    height: inherit;
+
+}
+.first_right img{
+    width: 100%;
+    height: 65%;
+  
+}

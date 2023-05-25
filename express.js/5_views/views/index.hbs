@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style1.css">
+    <title>Serve Website</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left_nav">
+                MyMusic
+
+            </div>
+            <div class="right_nav">
+                <ul>
+                    <li><a href="#" id="item-1" class="items_container">Home</a></li>
+                    <li><a href="#" id="item-2" class="items_container">About</a></li>
+                    <li><a href="#" id="item-3" class="items_container">Gallery</a></li>
+                    <li><a href="#" id="item-4" class="items_container">Contact</a></li>
+                    {{!-- If anyone wants to login into our site then there name will show beside Contact, to add dynamic content you hav add double curly braces --}}
+                    <li><a href="#" id="item-4" class="items_container">{{loginPerson}}</a></li>
+                    
+                    <li><a href="#" id="item-4" class="items_container">
+                        <input type="text" name="loginPerson1" id="text" placeholder="Name">
+                    </a></li>
+
+                </ul>
+            </div>
+            <div class="btn">
+                <button type="submit">Singin</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first">
+            
+            <div class="first_left">
+                <div class="first_container">
+                
+                
+                    <div class="first_left_content">
+                        <p>
+                            <span> Music </span>For Everyone
+                        </p>
+
+                    </div>
+                    <div class="first_left_content">
+                        <small>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint facilis officia, blanditiis culpa esse optio assumenda numquam ipsum animi, delectus dolor enim at consectetur?
+                        </small>
+
+                    </div>
+                    <div class="first_left_content">
+                        <button type="submit">Download App Now</button>
+                        <button type="submit" id="sec_btn">Start 30 Days Free Trail</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="first_right">
+                <img src="css/musician-band-0251.png" alt="Band" >
+            </div>
+        </section>
+    </main>
+    <script src="jQuery.js"></script>
+    <script>
+        $(document).ready(function(){
+
+        })
+    </script>
+</body>
+
+</html>
